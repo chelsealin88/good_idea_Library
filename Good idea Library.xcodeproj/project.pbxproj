@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		5EC30B85229BBB0B00E85062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC30B84229BBB0B00E85062 /* AppDelegate.swift */; };
-		5EC30B87229BBB0B00E85062 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC30B86229BBB0B00E85062 /* ViewController.swift */; };
 		5EC30B8A229BBB0B00E85062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC30B88229BBB0B00E85062 /* Main.storyboard */; };
 		5EC30B8D229BBB0B00E85062 /* Good_idea_Library.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EC30B8B229BBB0B00E85062 /* Good_idea_Library.xcdatamodeld */; };
 		5EC30B8F229BBB0C00E85062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC30B8E229BBB0C00E85062 /* Assets.xcassets */; };
 		5EC30B92229BBB0C00E85062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC30B90229BBB0C00E85062 /* LaunchScreen.storyboard */; };
+		5EC30BA1229BBD2400E85062 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC30BA0229BBD2400E85062 /* Book.swift */; };
+		5EC30BA3229BBE0700E85062 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC30BA2229BBE0700E85062 /* Request.swift */; };
+		5EC30BA9229BCDA700E85062 /* BookListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC30BA8229BCDA700E85062 /* BookListCollectionViewController.swift */; };
+		5EC30BAD229BCE3100E85062 /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC30BAB229BCE3100E85062 /* BookCollectionViewCell.swift */; };
+		5EC30BAE229BCE3100E85062 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EC30BAC229BCE3100E85062 /* BookCell.xib */; };
+		B13E4373C322CE0A1607EAF6 /* Pods_Good_idea_Library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C318670408B22A209D76EAA1 /* Pods_Good_idea_Library.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5EC30B81229BBB0B00E85062 /* Good idea Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good idea Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC30B84229BBB0B00E85062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5EC30B86229BBB0B00E85062 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5EC30B89229BBB0B00E85062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EC30B8C229BBB0B00E85062 /* Good_idea_Library.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Good_idea_Library.xcdatamodel; sourceTree = "<group>"; };
 		5EC30B8E229BBB0C00E85062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EC30B91229BBB0C00E85062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EC30B93229BBB0C00E85062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EC30BA0229BBD2400E85062 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		5EC30BA2229BBE0700E85062 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		5EC30BA8229BCDA700E85062 /* BookListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCollectionViewController.swift; sourceTree = "<group>"; };
+		5EC30BAB229BCE3100E85062 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		5EC30BAC229BCE3100E85062 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		846C27F04F834EB8B48F3B52 /* Pods-Good idea Library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Good idea Library.release.xcconfig"; path = "Pods/Target Support Files/Pods-Good idea Library/Pods-Good idea Library.release.xcconfig"; sourceTree = "<group>"; };
+		A95AB0E164DCAF4AC2DF2BEC /* Pods-Good idea Library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Good idea Library.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Good idea Library/Pods-Good idea Library.debug.xcconfig"; sourceTree = "<group>"; };
+		C318670408B22A209D76EAA1 /* Pods_Good_idea_Library.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Good_idea_Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13E4373C322CE0A1607EAF6 /* Pods_Good_idea_Library.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				5EC30B83229BBB0B00E85062 /* Good idea Library */,
 				5EC30B82229BBB0B00E85062 /* Products */,
+				7AA30ED957AA737C1E85736A /* Pods */,
+				99F4D28E0B9FEDFF8F972CF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				5EC30B84229BBB0B00E85062 /* AppDelegate.swift */,
-				5EC30B86229BBB0B00E85062 /* ViewController.swift */,
+				5EC30BAA229BCDAB00E85062 /* View */,
+				5EC30B9E229BBD0800E85062 /* Controller */,
+				5EC30B9F229BBD1400E85062 /* Modle */,
 				5EC30B88229BBB0B00E85062 /* Main.storyboard */,
 				5EC30B8E229BBB0C00E85062 /* Assets.xcassets */,
 				5EC30B90229BBB0C00E85062 /* LaunchScreen.storyboard */,
@@ -67,6 +84,50 @@
 			path = "Good idea Library";
 			sourceTree = "<group>";
 		};
+		5EC30B9E229BBD0800E85062 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5EC30BA8229BCDA700E85062 /* BookListCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5EC30B9F229BBD1400E85062 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+				5EC30BA0229BBD2400E85062 /* Book.swift */,
+				5EC30BA2229BBE0700E85062 /* Request.swift */,
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		5EC30BAA229BCDAB00E85062 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5EC30BAB229BCE3100E85062 /* BookCollectionViewCell.swift */,
+				5EC30BAC229BCE3100E85062 /* BookCell.xib */,
+			);
+			name = View;
+			path = Controller/Modle;
+			sourceTree = "<group>";
+		};
+		7AA30ED957AA737C1E85736A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A95AB0E164DCAF4AC2DF2BEC /* Pods-Good idea Library.debug.xcconfig */,
+				846C27F04F834EB8B48F3B52 /* Pods-Good idea Library.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		99F4D28E0B9FEDFF8F972CF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C318670408B22A209D76EAA1 /* Pods_Good_idea_Library.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EC30B96229BBB0C00E85062 /* Build configuration list for PBXNativeTarget "Good idea Library" */;
 			buildPhases = (
+				E5D1610D9E418B8734B2E6DB /* [CP] Check Pods Manifest.lock */,
 				5EC30B7D229BBB0B00E85062 /* Sources */,
 				5EC30B7E229BBB0B00E85062 /* Frameworks */,
 				5EC30B7F229BBB0B00E85062 /* Resources */,
+				F235432C276986A73870187A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EC30B92229BBB0C00E85062 /* LaunchScreen.storyboard in Resources */,
+				5EC30BAE229BCE3100E85062 /* BookCell.xib in Resources */,
 				5EC30B8F229BBB0C00E85062 /* Assets.xcassets in Resources */,
 				5EC30B8A229BBB0B00E85062 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +197,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E5D1610D9E418B8734B2E6DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Good idea Library-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F235432C276986A73870187A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Good idea Library/Pods-Good idea Library-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Good idea Library/Pods-Good idea Library-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5EC30B7D229BBB0B00E85062 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EC30B87229BBB0B00E85062 /* ViewController.swift in Sources */,
 				5EC30B8D229BBB0B00E85062 /* Good_idea_Library.xcdatamodeld in Sources */,
 				5EC30B85229BBB0B00E85062 /* AppDelegate.swift in Sources */,
+				5EC30BA9229BCDA700E85062 /* BookListCollectionViewController.swift in Sources */,
+				5EC30BAD229BCE3100E85062 /* BookCollectionViewCell.swift in Sources */,
+				5EC30BA3229BBE0700E85062 /* Request.swift in Sources */,
+				5EC30BA1229BBD2400E85062 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +398,7 @@
 		};
 		5EC30B97229BBB0C00E85062 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A95AB0E164DCAF4AC2DF2BEC /* Pods-Good idea Library.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +417,7 @@
 		};
 		5EC30B98229BBB0C00E85062 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 846C27F04F834EB8B48F3B52 /* Pods-Good idea Library.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
