@@ -19,7 +19,9 @@ class BookListCollectionViewController: UICollectionViewController {
         
         Request.getData { (books) in
             self.books = books
-            self.collectionView.reloadData()
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
         }
 
         registerNib(nibname: "BookCell")
@@ -57,17 +59,9 @@ class BookListCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCell", for: indexPath) as! BookCollectionViewCell
         
-//        let book = bookData[indexPath.row]
-//        cell.imageURL = book.list.image
-//        cell.imageView.image = nil
-//        Request.DownLoad.downloadImage(url: cell.imageURL!) { (image) in
-//            if cell.imageURL == book.list.image, let image = image {
-//                DispatchQueue.main.async {
-//                    cell.imageView.image = image
-//                }
-//            }
-//        }
-    
+        cell.originPrice.text = books[indexPath.row].originPrice
+        cell.sellPrice.text = books[indexPath.row].sellPrice
+        cell.bookNameLabel.text = books[indexPath.row].name
     
         return cell
     }
@@ -115,5 +109,35 @@ class BookListCollectionViewController: UICollectionViewController {
 extension BookListCollectionViewController : UICollectionViewDelegateFlowLayout {
     
     // todo: layout
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
+        
+        UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            let width = (collectionView.bounds.width - 30) / 2
+            let height = width / 2 * 3
+            return CGSize(width: width, height: height)
+    
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    }
 
+}
+
+extension String {
+    func downloadImage() -> UIImage? {
+        guard let imageURL = URL(string: self) else { return nil }
+        do {
+            let imageData = try Data(contentsOf: imageURL)
+            guard let image = UIImage(data: imageData) else { return nil }
+            return image
+        } catch {
+            print(error.localizedDescription)
+            return nil
+        }
+    }
 }
