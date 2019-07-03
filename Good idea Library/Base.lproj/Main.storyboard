@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Book List Collection View Controller-->
         <scene sceneID="dZ7-cT-jxE">
             <objects>
-                <collectionViewController id="7Wd-aL-iio" customClass="BookListCollectionViewController" customModule="Good_idea_Library" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="BookListCollectionViewController" id="7Wd-aL-iio" customClass="BookListCollectionViewController" customModule="Good_idea_Library" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="aU0-W1-hTm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,6 +43,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pgl-7X-3SZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="298" y="87"/>
+        </scene>
+        <!--Book List Collection View Controller-->
+        <scene sceneID="r3E-oH-0Hg">
+            <objects>
+                <viewController storyboardIdentifier="BookWebViewViewController" id="IAe-4l-hgG" customClass="BookListCollectionViewController" customModule="Good_idea_Library" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PEf-OD-VAd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kcw-ho-NrQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cWY-1d-V1B" firstAttribute="trailing" secondItem="Kcw-ho-NrQ" secondAttribute="trailing" id="LEA-4E-fLY"/>
+                            <constraint firstItem="Kcw-ho-NrQ" firstAttribute="leading" secondItem="cWY-1d-V1B" secondAttribute="leading" id="mqf-wP-YlB"/>
+                            <constraint firstItem="cWY-1d-V1B" firstAttribute="bottom" secondItem="Kcw-ho-NrQ" secondAttribute="bottom" id="vcf-oB-dfV"/>
+                            <constraint firstItem="Kcw-ho-NrQ" firstAttribute="top" secondItem="cWY-1d-V1B" secondAttribute="top" id="yJ6-Gf-lp2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cWY-1d-V1B"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VRp-E4-QEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="86"/>
         </scene>
     </scenes>
 </document>

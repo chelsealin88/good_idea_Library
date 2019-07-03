@@ -17,6 +17,7 @@
 		5EC30BA9229BCDA700E85062 /* BookListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC30BA8229BCDA700E85062 /* BookListCollectionViewController.swift */; };
 		5EC30BAD229BCE3100E85062 /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC30BAB229BCE3100E85062 /* BookCollectionViewCell.swift */; };
 		5EC30BAE229BCE3100E85062 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EC30BAC229BCE3100E85062 /* BookCell.xib */; };
+		5EF0727922CC421500708A09 /* BookWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0727822CC421500708A09 /* BookWebViewViewController.swift */; };
 		B13E4373C322CE0A1607EAF6 /* Pods_Good_idea_Library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C318670408B22A209D76EAA1 /* Pods_Good_idea_Library.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		5EC30BA8229BCDA700E85062 /* BookListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCollectionViewController.swift; sourceTree = "<group>"; };
 		5EC30BAB229BCE3100E85062 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
 		5EC30BAC229BCE3100E85062 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		5EF0727822CC421500708A09 /* BookWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWebViewViewController.swift; sourceTree = "<group>"; };
 		846C27F04F834EB8B48F3B52 /* Pods-Good idea Library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Good idea Library.release.xcconfig"; path = "Pods/Target Support Files/Pods-Good idea Library/Pods-Good idea Library.release.xcconfig"; sourceTree = "<group>"; };
 		A95AB0E164DCAF4AC2DF2BEC /* Pods-Good idea Library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Good idea Library.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Good idea Library/Pods-Good idea Library.debug.xcconfig"; sourceTree = "<group>"; };
 		C318670408B22A209D76EAA1 /* Pods_Good_idea_Library.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Good_idea_Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				5EC30BA8229BCDA700E85062 /* BookListCollectionViewController.swift */,
+				5EF0727822CC421500708A09 /* BookWebViewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -229,12 +232,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Good idea Library/Pods-Good idea Library-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +257,7 @@
 				5EC30B8D229BBB0B00E85062 /* Good_idea_Library.xcdatamodeld in Sources */,
 				5EC30B85229BBB0B00E85062 /* AppDelegate.swift in Sources */,
 				5EC30BA9229BCDA700E85062 /* BookListCollectionViewController.swift in Sources */,
+				5EF0727922CC421500708A09 /* BookWebViewViewController.swift in Sources */,
 				5EC30BAD229BCE3100E85062 /* BookCollectionViewCell.swift in Sources */,
 				5EC30BA3229BBE0700E85062 /* Request.swift in Sources */,
 				5EC30BA1229BBD2400E85062 /* Book.swift in Sources */,

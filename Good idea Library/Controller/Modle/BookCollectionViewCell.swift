@@ -21,5 +21,14 @@ class BookCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func updateCell(_ book: Book) {
+       
+        imageView.image = UIImage(named:book.image)
+        sellPrice.text = "優惠價格：\(book.sellPrice)元"
+        originPrice.text = "原價：\(book.originPrice)元"
+        bookNameLabel.text = book.name
+
+    }
 
 }

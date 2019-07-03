@@ -58,11 +58,8 @@ class BookListCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCell", for: indexPath) as! BookCollectionViewCell
-        
-        cell.originPrice.text = books[indexPath.row].originPrice
-        cell.sellPrice.text = books[indexPath.row].sellPrice
-        cell.bookNameLabel.text = books[indexPath.row].name
-    
+        let book = books[indexPath.row]
+        cell.updateCell(book)
         return cell
     }
     
