@@ -11,8 +11,13 @@ import UIKit
 
 class BookListCollectionViewController: UICollectionViewController {
     
-
+    enum CellType : String {
+        case simple = "BookCell"
+        case detail = "DetailCell"
+    }
     var books = [Book]()
+    var celltype = CellType.simple
+    var isOn = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +31,7 @@ class BookListCollectionViewController: UICollectionViewController {
         }
         
         registerNib(nibname: "BookCell")
+        registerNib(nibname: "DetailCell")
         
     }
     
@@ -52,10 +58,22 @@ class BookListCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCell", for: indexPath) as! BookCollectionViewCell
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: celltype.rawValue, for: indexPath)
         let book = books[indexPath.row]
-        cell.updateCell(book)
-        return cell
+        
+        guard let bookCellType = CellType(rawValue: celltype.rawValue) else { return UICollectionViewCell()}
+        switch bookCellType {
+        case .simple:
+            guard let simpleCell = cell as? BookCollectionViewCell else { return UICollectionViewCell() }
+            simpleCell.updateCell(book)
+            return simpleCell
+        default:
+            guard let detailCell = cell as? DetailCollectionViewCell else { return UICollectionViewCell() }
+            detailCell.updateCell(book)
+            return detailCell
+        }
+       
     }
     
     func registerNib(nibname: String) {
@@ -64,11 +82,25 @@ class BookListCollectionViewController: UICollectionViewController {
     }
     
     
-    @IBAction func searchButton(_ sender: Any) {
-    }
-    @IBAction func changeButton(_ sender: Any) {
+    // bar item button 
+    @IBAction func searchButton(_ sender: UIBarButtonItem) {
+        
     }
     
+    @IBAction func changeButton(_ sender: UIBarButtonItem) {
+        activeButton(bool: !isOn)
+    }
+    
+    func activeButton(bool: Bool) {
+        isOn = bool
+       
+        if isOn == false {
+            celltype = .simple
+        } else {
+            celltype = .detail
+        }
+        self.collectionView.reloadData()
+    }
     
     // MARK: UICollectionViewDelegate
     
@@ -106,12 +138,17 @@ class BookListCollectionViewController: UICollectionViewController {
 extension BookListCollectionViewController : UICollectionViewDelegateFlowLayout {
     
     // todo: layout
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.bounds.width - 30) / 2
-        let height = width / 2 * 3
-        return CGSize(width: width, height: height)
+        if celltype == .simple {
+            let width = (collectionView.bounds.width - 30) / 2
+            let height = width / 2 * 3
+            return CGSize(width: width, height: height)
+        } else {
+            let width = collectionView.bounds.width
+            let height = width / 3
+            return CGSize(width: width, height: height)
+        }
         
     }
     
