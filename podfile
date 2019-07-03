@@ -7,5 +7,5 @@ target 'Good idea Library' do
 
   # Pods for Good idea Library
   pod 'SwiftyJSON', '~> 4.0'
-pod 'Kingfisher', '~> 5.0'
+  pod 'Kingfisher'
 end

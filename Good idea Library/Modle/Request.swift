@@ -11,11 +11,15 @@ import UIKit
 
 
 struct Request {
+    // Singleton
+    static let shared = Request()
+    private init() {}
     
+    private let apiString = "https://bookshelf.goodideas-studio.com/api"
 
-    static func getData(handle: @escaping (_ books: [Book]) -> Void) {
+    func getData(handle: @escaping (_ books: [Book]) -> Void) {
         
-        let urlString = "https://bookshelf.goodideas-studio.com/api"
+        let urlString = apiString
         guard let url = URL(string: urlString) else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -39,3 +43,4 @@ struct Request {
 
     
 }
+

@@ -66,6 +66,7 @@
             <size key="customSize" width="317" height="463"/>
             <connections>
                 <outlet property="button" destination="i2a-NI-cgd" id="KRU-M7-cP0"/>
+                <outlet property="imageView" destination="ggY-jU-EUA" id="cWJ-vl-nyk"/>
                 <outlet property="originPrice" destination="DKC-hf-Ddm" id="Da1-Eg-O1X"/>
                 <outlet property="sellPrice" destination="5xo-Qo-dFT" id="4fZ-HA-cGI"/>
             </connections>

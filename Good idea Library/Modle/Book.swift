@@ -23,12 +23,13 @@ struct Book : Codable {
     let name: String
     let link: String
     
-    init(json: JSON) {
-        self.image = json["image"].stringValue
-        self.originPrice = json["originPrice"].stringValue
-        self.sellPrice = json["sellPrice"].stringValue
-        self.name = json["name"].stringValue
-        self.link = json["link"].stringValue
-        
-    }
+//    init(json: JSON) {
+//        print(json["image"].stringValue)
+//        self.image = json["image"].stringValue
+//        self.originPrice = json["originPrice"].stringValue
+//        self.sellPrice = json["sellPrice"].stringValue
+//        self.name = json["name"].stringValue
+//        self.link = json["link"].stringValue
+//    }
+    
 }
