@@ -15,6 +15,7 @@ class BookListCollectionViewController: UICollectionViewController {
         case simple = "BookCell"
         case detail = "DetailCell"
     }
+//    var seletedbook : Book?
     var books = [Book]()
     var celltype = CellType.simple
     var isOn = false
@@ -22,9 +23,11 @@ class BookListCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        print(seletedbook?.link)
         // get books data
         Request.shared.getData { (books) in
             self.books = books
+            
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
             }
@@ -102,6 +105,13 @@ class BookListCollectionViewController: UICollectionViewController {
         self.collectionView.reloadData()
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "BookWebViewViewController") as! BookWebViewViewController
+        navigationController?.pushViewController(vc, animated: true)
+        vc.urlString = books[indexPath.row].link
+        
+    }
     // MARK: UICollectionViewDelegate
     
     /*

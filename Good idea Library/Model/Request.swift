@@ -33,8 +33,6 @@ struct Request {
             
             do {
                 let decoderData = try JSONDecoder().decode(BookData.self, from: data)
-//                print("==========Data==========")
-//                print(decoderData)
                 handle(decoderData.list)
             } catch {
                 print(error.localizedDescription)

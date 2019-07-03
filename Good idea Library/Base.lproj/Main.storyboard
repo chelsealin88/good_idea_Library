@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="1207.2463768115942" y="86.383928571428569"/>
         </scene>
-        <!--Book List Collection View Controller-->
+        <!--Book Web View View Controller-->
         <scene sceneID="r3E-oH-0Hg">
             <objects>
-                <viewController storyboardIdentifier="BookWebViewViewController" id="IAe-4l-hgG" customClass="BookListCollectionViewController" customModule="Good_idea_Library" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookWebViewViewController" id="IAe-4l-hgG" customClass="BookWebViewViewController" customModule="Good_idea_Library" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PEf-OD-VAd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,6 +82,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cWY-1d-V1B"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="Kcw-ho-NrQ" id="vM6-iw-od9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRp-E4-QEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

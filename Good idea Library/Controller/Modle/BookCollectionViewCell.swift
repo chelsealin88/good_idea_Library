@@ -23,13 +23,13 @@ class BookCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var originPrice: UILabel!
     @IBOutlet weak var learnMoreButton: UIButton! {
         didSet {
-            learnMoreButton.layer.cornerRadius = 13
             learnMoreButton.layer.borderWidth = 1
+            learnMoreButton.layer.cornerRadius = 10
             learnMoreButton.layer.borderColor = UIColor.gray.cgColor
         }
     }
     
-    override func awakeFromNib() {
+    override func awakeFromNib() { 
         super.awakeFromNib()
         // Initialization code
     }

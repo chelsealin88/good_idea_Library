@@ -14,7 +14,6 @@ class DetailCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var originPriceLabel: UILabel!
     @IBOutlet weak var sellPrice: UILabel!
-    @IBOutlet weak var learnMoreButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,9 +23,10 @@ class DetailCollectionViewCell: UICollectionViewCell {
     func updateCell(_ book: Book) {
         sellPrice.text = "優惠價格：\(book.sellPrice)元"
         originPriceLabel.text = "原價：\(book.originPrice)元"
+        nameLabel.text = book.name
         guard let url = URL(string: book.image) else { return }
         imageView.kf.setImage(with: url)
-        
+    
     }
 
 }

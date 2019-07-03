@@ -8,16 +8,34 @@
 //
 
 import UIKit
+import WebKit
 
-class BookWebViewViewController: UIViewController {
-
+class BookWebViewViewController: UIViewController, UIWebViewDelegate {
+    
+    @IBOutlet weak var webView: UIWebView!
+    
+    var urlString: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        webView.delegate = self
+        loadURL()
 
-        // Do any additional setup after loading the view.
+        print(urlString)
     }
     
 
+    func loadURL() {
+        
+        guard let urlString = urlString else { return }
+        let url = URL(string: urlString)
+        let request = URLRequest(url: url!)
+        webView.loadRequest(request)
+        print("Webpage Loaded Successfully")
+        
+    }
+    
     /*
     // MARK: - Navigation
 

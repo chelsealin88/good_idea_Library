@@ -42,11 +42,12 @@
                             <constraint firstAttribute="width" secondItem="ggY-jU-EUA" secondAttribute="height" id="Mxt-cM-b4Z"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2a-NI-cgd">
-                        <rect key="frame" x="20" y="425" width="280" height="25"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1e7-xf-QdZ">
+                        <rect key="frame" x="20" y="430" width="280" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="25" id="jtT-Xd-TtX"/>
+                            <constraint firstAttribute="height" constant="20" id="Iep-Jt-eLO"/>
                         </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <state key="normal" title="查看更多">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
@@ -57,10 +58,10 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ggY-jU-EUA" secondAttribute="trailing" constant="20" id="D8l-Qg-741"/>
                 <constraint firstItem="ggY-jU-EUA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="IUe-0p-Edl"/>
-                <constraint firstAttribute="trailing" secondItem="i2a-NI-cgd" secondAttribute="trailing" constant="20" id="QqM-9a-Nw3"/>
-                <constraint firstItem="i2a-NI-cgd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="WB6-vg-QXq"/>
+                <constraint firstAttribute="trailing" secondItem="1e7-xf-QdZ" secondAttribute="trailing" constant="20" id="K3x-nd-KoT"/>
+                <constraint firstItem="1e7-xf-QdZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="RWf-MT-fIm"/>
                 <constraint firstItem="dVk-hO-iar" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="eaX-k3-S94"/>
-                <constraint firstAttribute="bottom" secondItem="i2a-NI-cgd" secondAttribute="bottom" constant="10" id="fOT-GO-7SD"/>
+                <constraint firstAttribute="bottom" secondItem="1e7-xf-QdZ" secondAttribute="bottom" constant="10" id="hhy-tf-kba"/>
                 <constraint firstItem="ggY-jU-EUA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="oPT-v3-8Es"/>
                 <constraint firstItem="dVk-hO-iar" firstAttribute="top" secondItem="ggY-jU-EUA" secondAttribute="bottom" constant="10" id="yl3-9g-jWX"/>
             </constraints>
@@ -68,7 +69,7 @@
             <size key="customSize" width="317" height="463"/>
             <connections>
                 <outlet property="imageView" destination="ggY-jU-EUA" id="cWJ-vl-nyk"/>
-                <outlet property="learnMoreButton" destination="i2a-NI-cgd" id="XLW-iF-ngj"/>
+                <outlet property="learnMoreButton" destination="1e7-xf-QdZ" id="3gw-hu-tva"/>
                 <outlet property="originPrice" destination="DKC-hf-Ddm" id="Da1-Eg-O1X"/>
                 <outlet property="sellPrice" destination="5xo-Qo-dFT" id="4fZ-HA-cGI"/>
             </connections>
