@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E6E3BC122CC825800EB7538 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6E3BBF22CC825800EB7538 /* DetailCollectionViewCell.swift */; };
+		5E6E3BC522CC843C00EB7538 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E6E3BC422CC843C00EB7538 /* DetailCell.xib */; };
 		5EC30B85229BBB0B00E85062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC30B84229BBB0B00E85062 /* AppDelegate.swift */; };
 		5EC30B8A229BBB0B00E85062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC30B88229BBB0B00E85062 /* Main.storyboard */; };
 		5EC30B8D229BBB0B00E85062 /* Good_idea_Library.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EC30B8B229BBB0B00E85062 /* Good_idea_Library.xcdatamodeld */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E6E3BBF22CC825800EB7538 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		5E6E3BC422CC843C00EB7538 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
 		5EC30B81229BBB0B00E85062 /* Good idea Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good idea Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC30B84229BBB0B00E85062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EC30B89229BBB0B00E85062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,7 +80,7 @@
 				5EC30B84229BBB0B00E85062 /* AppDelegate.swift */,
 				5EC30BAA229BCDAB00E85062 /* View */,
 				5EC30B9E229BBD0800E85062 /* Controller */,
-				5EC30B9F229BBD1400E85062 /* Modle */,
+				5EC30B9F229BBD1400E85062 /* Model */,
 				5EC30B88229BBB0B00E85062 /* Main.storyboard */,
 				5EC30B8E229BBB0C00E85062 /* Assets.xcassets */,
 				5EC30B90229BBB0C00E85062 /* LaunchScreen.storyboard */,
@@ -95,20 +99,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		5EC30B9F229BBD1400E85062 /* Modle */ = {
+		5EC30B9F229BBD1400E85062 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				5EC30BA0229BBD2400E85062 /* Book.swift */,
 				5EC30BA2229BBE0700E85062 /* Request.swift */,
 			);
-			path = Modle;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5EC30BAA229BCDAB00E85062 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				5EC30BAB229BCE3100E85062 /* BookCollectionViewCell.swift */,
+				5E6E3BBF22CC825800EB7538 /* DetailCollectionViewCell.swift */,
 				5EC30BAC229BCE3100E85062 /* BookCell.xib */,
+				5E6E3BC422CC843C00EB7538 /* DetailCell.xib */,
 			);
 			name = View;
 			path = Controller/Modle;
@@ -195,6 +201,7 @@
 				5EC30BAE229BCE3100E85062 /* BookCell.xib in Resources */,
 				5EC30B8F229BBB0C00E85062 /* Assets.xcassets in Resources */,
 				5EC30B8A229BBB0B00E85062 /* Main.storyboard in Resources */,
+				5E6E3BC522CC843C00EB7538 /* DetailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +264,7 @@
 				5EC30B8D229BBB0B00E85062 /* Good_idea_Library.xcdatamodeld in Sources */,
 				5EC30B85229BBB0B00E85062 /* AppDelegate.swift in Sources */,
 				5EC30BA9229BCDA700E85062 /* BookListCollectionViewController.swift in Sources */,
+				5E6E3BC122CC825800EB7538 /* DetailCollectionViewCell.swift in Sources */,
 				5EF0727922CC421500708A09 /* BookWebViewViewController.swift in Sources */,
 				5EC30BAD229BCE3100E85062 /* BookCollectionViewCell.swift in Sources */,
 				5EC30BA3229BBE0700E85062 /* Request.swift in Sources */,

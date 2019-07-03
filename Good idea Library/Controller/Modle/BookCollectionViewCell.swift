@@ -11,12 +11,23 @@ import Kingfisher
 
 class BookCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            imageView.layer.shadowOffset = .zero
+            imageView.layer.shadowOpacity = 0.5
+            imageView.layer.shadowColor = UIColor.black.cgColor
+            imageView.layer.masksToBounds = false
+        }
+    }
     @IBOutlet weak var sellPrice: UILabel!
     @IBOutlet weak var originPrice: UILabel!
-//    @IBOutlet weak var bookNameLabel: UILabel!
-    @IBOutlet weak var button: UIButton!
-    
+    @IBOutlet weak var learnMoreButton: UIButton! {
+        didSet {
+            learnMoreButton.layer.cornerRadius = 13
+            learnMoreButton.layer.borderWidth = 1
+            learnMoreButton.layer.borderColor = UIColor.gray.cgColor
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,23 +35,14 @@ class BookCollectionViewCell: UICollectionViewCell {
     }
     
     func updateCell(_ book: Book) {
-       print(book)
-//        imageView.image = UIImage(named:book.image)
         sellPrice.text = "優惠價格：\(book.sellPrice)元"
         originPrice.text = "原價：\(book.originPrice)元"
-//        bookNameLabel.text = book.name
         guard let url = URL(string: book.image) else { return }
         imageView.kf.setImage(with: url)
 
+        self.layer.borderWidth = 1
+        self.layer.cornerRadius = 15
+        self.layer.borderColor = UIColor.gray.cgColor
     }
 
 }
-
-//extension UIImageView {
-//    
-//    func setImageFrom(url: String) {
-//        guard let url = URL(string: url) else { return }
-//        self.set(with: url)
-//
-//    }
-//}

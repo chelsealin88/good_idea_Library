@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dVk-hO-iar">
-                        <rect key="frame" x="20" y="310" width="108.5" height="49"/>
+                        <rect key="frame" x="20" y="310" width="111" height="49"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原價：150元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKC-hf-Ddm">
                                 <rect key="frame" x="0.0" y="0.0" width="86.5" height="19.5"/>
@@ -29,29 +29,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="優惠價：100元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xo-Qo-dFT">
-                                <rect key="frame" x="0.0" y="29.5" width="108.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.57842874529999999" green="0.034700421840000002" blue="0.044664306119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="0.0" y="29.5" width="111" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.72293385152284262" green="0.049463911633756359" blue="0.063001204947832248" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ggY-jU-EUA">
                         <rect key="frame" x="20" y="20" width="280" height="280"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="ggY-jU-EUA" secondAttribute="height" id="Mxt-cM-b4Z"/>
                         </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2a-NI-cgd">
-                        <rect key="frame" x="20" y="420" width="280" height="30"/>
+                        <rect key="frame" x="20" y="425" width="280" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="jtT-Xd-TtX"/>
+                        </constraints>
                         <state key="normal" title="查看更多">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
                     </button>
                 </subviews>
             </view>
-            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ggY-jU-EUA" secondAttribute="trailing" constant="20" id="D8l-Qg-741"/>
                 <constraint firstItem="ggY-jU-EUA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="IUe-0p-Edl"/>
@@ -65,8 +67,8 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="317" height="463"/>
             <connections>
-                <outlet property="button" destination="i2a-NI-cgd" id="KRU-M7-cP0"/>
                 <outlet property="imageView" destination="ggY-jU-EUA" id="cWJ-vl-nyk"/>
+                <outlet property="learnMoreButton" destination="i2a-NI-cgd" id="XLW-iF-ngj"/>
                 <outlet property="originPrice" destination="DKC-hf-Ddm" id="Da1-Eg-O1X"/>
                 <outlet property="sellPrice" destination="5xo-Qo-dFT" id="4fZ-HA-cGI"/>
             </connections>
