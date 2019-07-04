@@ -18,11 +18,10 @@ class BookWebViewViewController: UIViewController, UIWebViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         webView.delegate = self
         loadURL()
-
-        print(urlString)
+        settingNavigation()
+        
     }
     
 
@@ -33,17 +32,14 @@ class BookWebViewViewController: UIViewController, UIWebViewDelegate {
         let request = URLRequest(url: url!)
         webView.loadRequest(request)
         print("Webpage Loaded Successfully")
-        
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func settingNavigation() {
+        
+        let navigationBar = navigationController?.navigationBar
+        navigationBar?.tintColor = .black
+        navigationItem.largeTitleDisplayMode = .never
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: nil, action: nil)
     }
-    */
-
+    
 }
