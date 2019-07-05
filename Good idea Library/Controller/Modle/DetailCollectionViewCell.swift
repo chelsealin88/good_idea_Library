@@ -26,7 +26,7 @@ class DetailCollectionViewCell: UICollectionViewCell {
         nameLabel.text = book.name
         guard let url = URL(string: book.image) else { return }
         imageView.kf.setImage(with: url)
-    
+
     }
 
 }

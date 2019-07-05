@@ -8,6 +8,7 @@
 
 import UIKit
 
+// todo: up to top button
 
 class BookListCollectionViewController: UICollectionViewController {
     
@@ -34,6 +35,7 @@ class BookListCollectionViewController: UICollectionViewController {
         registerNib(nibname: "BookCell")
         registerNib(nibname: "DetailCell")
         
+        setFloatButton()
         setSearchBar()
         
     }
@@ -125,6 +127,27 @@ class BookListCollectionViewController: UICollectionViewController {
         searchController.dimsBackgroundDuringPresentation = false
         searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController
+    }
+    
+    // setting float button
+    func setFloatButton() {
+        
+        let button = UIButton(frame: CGRect(x: 300, y: 720, width: 50, height: 50))
+        button.backgroundColor = UIColor(red: 183/255, green: 217/255, blue: 220/255, alpha: 1)
+        button.layer.cornerRadius = 25
+        button.setImage(UIImage(named: "icons8-collapse_arrow"), for: .normal)
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = .zero
+        button.layer.shadowOpacity = 0.5
+        button.addTarget(self, action: #selector(scrollToTop), for: .touchUpInside)
+        
+        self.view.addSubview(button)
+        
+    }
+    
+    @objc func scrollToTop() {
+        
+        collectionView.setContentOffset(CGPoint(x: 0, y: -250), animated: true)
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

@@ -21,7 +21,6 @@ class BookWebViewViewController: UIViewController, UIWebViewDelegate {
         webView.delegate = self
         loadURL()
         settingNavigation()
-        
     }
     
 

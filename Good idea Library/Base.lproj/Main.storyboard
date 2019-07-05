@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--好想書架-->
+        <!--好想書庫-->
         <scene sceneID="dZ7-cT-jxE">
             <objects>
                 <collectionViewController storyboardIdentifier="BookListCollectionViewController" id="7Wd-aL-iio" customClass="BookListCollectionViewController" customModule="Good_idea_Library" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,7 +39,7 @@
                             <outlet property="delegate" destination="7Wd-aL-iio" id="vfF-um-P44"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="好想書架" id="zzv-xx-6g9">
+                    <navigationItem key="navigationItem" title="好想書庫" id="zzv-xx-6g9">
                         <rightBarButtonItems>
                             <barButtonItem systemItem="search" id="qID-E6-RXl">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,7 +98,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="vzY-xC-wAb">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.68922755256578994" green="0.84011382658464373" blue="0.85562737944162437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.71764705882352942" green="0.85098039215686272" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
